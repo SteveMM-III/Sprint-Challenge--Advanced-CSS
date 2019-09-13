@@ -3,7 +3,7 @@ header {
    width: 100%;
    height: 100px;
    padding: 1% 0;
-   background-color: @nav-bg;
+   background-color: @nav-bg-alpha;
    border-bottom: 2px solid @nav-border;
    position: fixed;
    top: 0;
@@ -36,7 +36,7 @@ header {
       } // nav
 
       ul {
-         .flex(@dir, space-evenly, @align);
+         .flex(@just: space-evenly);
 
          a {
             color: black;
