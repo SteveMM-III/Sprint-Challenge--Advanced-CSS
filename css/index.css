@@ -180,6 +180,7 @@ header #header-container {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 @media (max-width: 500px) {
@@ -208,7 +209,9 @@ header #header-container nav {
 }
 header #header-container ul {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
 }
 header #header-container ul a {
   color: black;
@@ -337,7 +340,8 @@ footer {
   background-color: #22283A;
 }
 .home .walk .btn:hover {
-  background-color: #515f8a;
+  color: #22283A;
+  background-color: #98a3c3;
   cursor: pointer;
 }
 @media (max-width: 500px) {

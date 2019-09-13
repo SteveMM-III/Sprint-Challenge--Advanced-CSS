@@ -12,11 +12,17 @@
    background-color: @bg-color;
 
    &:hover {
-      background-color: lighten(@bg-color, 25%);
+      color: @bg-color;
+      background-color: lighten(@bg-color, 50%);
       cursor: pointer;
-   }
+   } // &:hover
    
-   @media @phone {
-      width: 100%;
-   }
+   @media @phone { width: 100%; }
+} // .button()
+
+.flex(@dir: row, @just: center, @align: center) {
+   display: flex;
+   flex-direction: @dir;
+   justify-content: @just;
+   align-items: @align;
 }
